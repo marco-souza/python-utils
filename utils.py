@@ -1,9 +1,4 @@
-"""Init a project Reakit Project
-
-Usage:
-
-    python3 init.py cmd
-"""
+"""Utils library"""
 from subprocess import call
 import sys
 
