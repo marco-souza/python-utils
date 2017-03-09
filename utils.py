@@ -2,6 +2,7 @@
 from subprocess import call
 import sys
 
+
 def execute(cmd):
     """Execute a command
 
@@ -14,7 +15,7 @@ def execute(cmd):
     call(cmd.split(' '))
 
 
-def delete_dir(argv, parent=''):
+def delete_dirs(argv, parent=''):
     """Delete one or more dirs
 
     Args:
@@ -31,7 +32,7 @@ def delete_dir(argv, parent=''):
         execute('rm -r ' + ' '.join(argv))
 
 
-def create_dir(argv, parent=''):
+def create_dirs(argv, parent=''):
     """Create one or more dirs
 
     Args:

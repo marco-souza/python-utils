@@ -31,7 +31,7 @@ class I18n:
                 with io.open(self._file(), "w+") as output:
                     json.dump({}, output)
 
-    def translante(self, token):
+    def translate(self, token):
         if not self.tokens:
             # Reading i18n file
             with open(self._file()) as data_file:
