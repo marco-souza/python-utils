@@ -7,12 +7,12 @@ import json
 class I18n:
     lang = 'en'
     tokens = []
-    path = './i18n/'
+    path = './lib/i18n/'
 
     def __init__(self, lang):
         """Constructor"""
         if not path.exists(self.path):
-            utils.create_dir(self.path)
+            utils.create_dirs(self.path)
         self.set_lang(lang)
 
     def _file(self):

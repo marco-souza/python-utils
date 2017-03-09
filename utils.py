@@ -47,7 +47,7 @@ def create_dirs(argv, parent=''):
 
     elif type(argv) == type([]):
         for i in argv:
-            create_dir(i)
+            create_dirs(i)
 
 
 def is_int(arg):
